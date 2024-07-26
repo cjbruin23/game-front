@@ -37,7 +37,7 @@ function App() {
   
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
+    {/* <h1 className="text-3xl font-bold underline">
       Hello world!
     </h1>
       <form onSubmit={handleSubmit}>
@@ -51,7 +51,7 @@ function App() {
         <input type="text" name="inputPassword" />
 
         <button type="submit">Login</button>
-      </form>
+      </form> */}
     </>
   )
 }
