@@ -1,5 +1,6 @@
 import axios from "axios";
 import "./App.css";
+import LoginForm from "./components/Login";
 
 type UserInformation = {
   email: string;
@@ -48,26 +49,7 @@ function App() {
         </h1>
 
         <form onSubmit={handleSubmit}>
-          <label>Email:</label>
-          <input type="text" name="inputEmail" className="border-2 mb-4" />
-          <br />
-
-          <label>Username:</label>
-          <input type="text" name="inputUsername" className="border-2 mb-4" />
-          <br />
-
-          <label>Password:</label>
-          <input type="text" name="inputPassword" className="border-2 mb-4" />
-          <br />
-
-          <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-neutral-200">
-            <span>Login</span>
-            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
-              <div className="relative h-full w-8 bg-white/20"></div>
-            </div>
-          </button>
-          <button type="submit">Login</button>
-          <button type="submit">Sign Up</button>
+          <LoginForm />
         </form>
       </div>
     </>
