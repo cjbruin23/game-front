@@ -14,11 +14,12 @@ function Home() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label className="mb-2">
           What is your name?
           <input type="text" value={inputValue} onChange={handleChange}></input>
         </label>
-        <br></br>
+        <br/>
+
         <button type="submit">Submit</button>
       </form>
 
