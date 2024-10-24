@@ -1,16 +1,21 @@
 import { useState } from "react";
 
-function Home() {
+type Props = {
+  submitForm: (data: string) => void;
+}
+
+function Home( {submitForm}: Props) {
   const [inputValue, setInputValue] = useState("");
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(inputValue);
+    submitForm(inputValue)
   };
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -23,7 +28,6 @@ function Home() {
         <button type="submit">Submit</button>
       </form>
 
-      <div>{inputValue ? `Welcome ${inputValue}` : ""}</div>
     </>
   );
 }

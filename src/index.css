@@ -1,0 +1,9 @@
+body {
+  padding: 1rem;
+}
+
+label {
+  input {
+    margin-left: 1rem;
+  }
+}
