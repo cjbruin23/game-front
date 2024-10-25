@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5164/weatherforecast")
+      .get("http://localhost:5164/api/player")
       .then((res) => console.log("res", res))
       .catch((err) => console.log("err", err));
   }, []);

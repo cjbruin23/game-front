@@ -18,6 +18,8 @@ function Home( {submitForm}: Props) {
 
   return (
     <>
+    <div className="home">
+    <h1 className="align-center">Welcome to FarmArcade</h1>
       <form onSubmit={handleSubmit}>
         <label className="mb-2">
           What is your name?
@@ -28,6 +30,8 @@ function Home( {submitForm}: Props) {
         <button type="submit">Submit</button>
       </form>
 
+    </div>
+    
     </>
   );
 }
